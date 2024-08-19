@@ -6,5 +6,6 @@ int main(){
   insertEnd(3);
   insertEnd(4);
   insertEnd(5);
-  retrun 0;
+  display();
+  return 0;
 }

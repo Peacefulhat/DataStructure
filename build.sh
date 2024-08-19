@@ -1,9 +1,8 @@
 #!/usr/bin/zsh
 filePath=$1
 dataStructurePath=$2
-gcc -o main $filePath $dataStructurePath
-echo
 #some animation
+gcc -o main $filePath $dataStructurePath
 echo -n "compiling "
 iterations=13
 delay=0.040
