@@ -1,3 +1,4 @@
+#!/usr/bin/zsh
 filePath=$1
 dataStructurePath=$2
 gcc -o main $filePath $dataStructurePath
