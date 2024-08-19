@@ -1,11 +1,11 @@
-#include"list/list.h"
+#include"tree/bst.h"
 
 int main(){
-  insertEnd(1);
-  insertEnd(2);  
-  insertEnd(3);
-  insertEnd(4);
-  insertEnd(5);
-  display();
+  insert(1);
+  insert(2);  
+  insert(3);
+  insert(4);
+  insert(5);
+  postOrder(raddress());
   return 0;
 }
