@@ -15,7 +15,7 @@ pair binarySearch(TYPE *arr, int size,int valueToSearch);
 void bubbleSort(TYPE *arr, int size);
 void selectionSort(TYPE *arr, int size);
 void insertionSort(TYPE *arr, int size);
-
+void print(TYPE*arr, int size);
 
 
 

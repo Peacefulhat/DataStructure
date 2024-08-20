@@ -1,5 +1,7 @@
 #include"searchSort.h"
+
 pair linearSearch(TYPE *arr,int size,int valueToSearch){
+// for both sroted and unsorted data set.
 pair foundOrNot ={INT_MIN,INT_MIN};
 // check for every value one by one
 for( int i=0;i<size-1;i++){
@@ -19,10 +21,14 @@ if(foundOrNot.index==INT_MIN){
 return foundOrNot;
 }
 
+
 pair binarySearch(TYPE *arr, int size,int valueToSearch){
+// only for sorted data set.
 pair foundOrNot={INT_MIN,INT_MIN};
 int start=0;
 int end=size-1;
+// if values end or start become like 2^31
+  // we can not do mid=start+end/2 because it will go out of int range.
 int mid = start+(end-start)/2;
 while(start<=end){
     // value found
@@ -48,6 +54,45 @@ while(start<=end){
   }
   return foundOrNot;
 }
-void bubbleSort(TYPE *arr, int size);
-void selectionSort(TYPE *arr, int size);
-void insertionSort(TYPE *arr, int size);
+void bubbleSort(TYPE *arr, int size){
+
+}
+
+void selectionSort(TYPE *arr, int size){
+
+for(int i=0;i<size;i++){
+    int min=arr[i];// assuming first element of unsorted section is min.
+    int minIndex=i; // unsorted element index
+  for(int j=i+1;j<size;j++){
+    if(min>arr[j]){// finding min value
+    min=arr[j];
+    minIndex=j;
+      }
+     
+    }//exchanging min value with other value
+      arr[minIndex]=arr[i];
+      arr[i]=min;
+  }
+
+}
+
+void insertionSort(TYPE *arr, int size){
+// only useful for small data set.
+for(int i=1;i<size;i++){
+    int val=arr[i];// unsroted section
+    int j=i-1; // sorted section
+    for(;j>=0&&val<arr[j];j--){// comapare from right to left.
+    arr[j+1]=arr[j];// shift to right. 
+     
+    }
+    arr[j+1]=val;
+    }
+  }
+
+
+
+void print(TYPE *arr, int size){
+  for(int i=0;i<size;i++){
+  printf("%d ",arr[i]);
+  }
+}
