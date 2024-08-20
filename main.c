@@ -1,11 +1,8 @@
-#include"tree/bst.h"
-
+#include"searchingAndSorting/searchSort.h"
 int main(){
-  insert(1);
-  insert(2);  
-  insert(3);
-  insert(4);
-  insert(5);
-  postOrder(raddress());
+
+  int arr[5]={1,2,4,6,9};
+  pair result = binarySearch(arr,5,0);
+  printf("%d %d",result.index,result.value);
   return 0;
 }
