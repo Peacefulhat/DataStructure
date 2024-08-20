@@ -11,8 +11,8 @@ break;
 }
 }
 //value not found
-if(foundOrNot.index=INT_MIN){
-    foundOrNOt.index=-1;
+if(foundOrNot.index==INT_MIN){
+    foundOrNot.index=-1;
     foundOrNot.value=-1;
   }
 
