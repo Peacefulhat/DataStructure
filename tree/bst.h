@@ -13,8 +13,8 @@ void insert(TYPE);
 bool isTreeEmpty();
 //depth first traversal.
 void preOrder(struct treeNode*);
-void inOrder();
-void postOrder();
+void inOrder(struct treeNode*);
+void postOrder(struct treeNode*);
 //breath firt traversal.
 void levelOrder(struct treeNode*);
 struct treeNode*search(TYPE);
