@@ -1,10 +1,10 @@
 #include"searchingAndSorting/searchSort.h"
 int main(){
 
-  int arr[5]={2,1,4,3,0};
-  print(arr,5);
+  int arr[6]={2,1,4,3,0,-1};
+  print(arr,6);
   printf("\nAfter sorting: ");
-  insertionSort(arr,5);
-  print(arr,5);
+  bubbleSort(arr,6);
+  print(arr,6);
   return 0;
 }

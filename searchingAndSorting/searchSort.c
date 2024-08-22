@@ -55,7 +55,20 @@ while(start<=end){
   return foundOrNot;
 }
 void bubbleSort(TYPE *arr, int size){
-
+for(int i=0;i<size-1;i++){// rounds.
+   bool swap=0;// to check if swaps are happning or not.
+  for(int j=0;j<size-i-1;j++){ // comparisions
+    if(arr[j]>arr[j+1]){
+      int temp=arr[j];
+        arr[j]=arr[j+1];
+        arr[j+1]=temp;
+      }
+      swap=1;// swap happed.
+    }
+    if(swap==0){
+      break;
+    }
+  }
 }
 
 void selectionSort(TYPE *arr, int size){
